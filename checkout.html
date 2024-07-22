@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Purshasing</title>
+</head>
+<body>
+  <header>
+    <div class="px-3 py-2 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <h1>Tepra Super Market</h1> 
+            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="index.html" class="nav-link text-secondary">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAf0lEQVRIS+2Vyw2AIBBEoSKl/ya0IoUEPGjAl4m7F+G6A8PbD8RgvKLx+cHdYMtES4eqxFKNUd2D4HhJWSOmumnQTejVPPcuormlOrkGoy7aM9fa2FQCPJ/uBhRdHjSKLhfZ3ICiywR0I9XJc/Bjgy/mYPhU0DbFOvc/Gd+MCk9prSgZmFAs+AAAAABJRU5ErkJggg=="/>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="order.html" class="nav-link text-white">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABNklEQVRIS+2V4U3DMBBGkwkoE9BOUJiAMAEwAe0EiAkIG7ABMAF0AsIEpRO0I5QJ4HvIDrZl4oQoyh9O+uTkfHfvzknTPBvY8oHrZ78B7gW+7ggn5ybMiQFKBd12LG7D73RBfm0hYKqdtTSRzqRKupCepTepMJn4T6VL6cX4X7XupRNpZwkhgOBzaWUKE0dHTOR2F/PZXFbA3+YC6I4uPqRjp4uwW/JiU03lf5cOJDu9B2Cso6BTijE2STMHSrGt2Tu03WotJaalFvEeoKkQsTEAfgDkYhbMKfAcPcCj7q+kSuIMCXiQCpPc5F8aCC8D8U/SIgRYuqnXa6mnDd+iz15lf5LruqMC+sBbTTAqIAVvNUHT8/4HJH8Nfz4ivobzRPmN9vnauubmefuj/Scnz6htwOATfAF32E4ZubZKggAAAABJRU5ErkJggg=="/>
+                Orders
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA7ElEQVRIS2NkoDFgpLH5DKMWEAxhXEEkANRZD8QBUBM2AOlGIP5A0EQ0BbgsuABUp4+m9gCQ70gNCxyAhuzHYRDIApBFRANsPmiABg82Q0DBBJJHB/+hAhjmYbMAFO7rcTgxECgOig+KLABpxhYHF4HiBjgsJskHIDMUgHgCEPtDDVwIDZoHSBbADMUVH+DQoSQnk20BKA7ygdgBzWkHgHxQJINosuNgAVBnPC4/Q8WxpSSi4gBf6kG3Ez0/EGUByOv2BFwPkz6IJQixakWOZEKRhm4AUQmErhYQGTqkKSPKm6QZiap61AKCoQcAZzEjGVlD6CAAAAAASUVORK5CYII="/>
+                Sales
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="px-3 py-2 border-bottom mb-3">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+            <button type="button" class="btn btn-light text-dark me-2" onclick="navigateTo('login.html')">Login</button>
+            <button type="button" class="btn btn-primary" onclick="navigateTo('signup.html')">Sign-up</button>           
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="row">
+    <div class="col-md-6">
+      <form action="" id="item-form">
+        <div class="form-group mb-3">
+          <label for="item-name">Item Name: </label>
+          <input type="text" class="form-control" id="item-name"/>
+        </div>
+        <div class="form-group mb-4">
+          <label for="item-price">Item Price: </label>
+          <input type="text" class="form-control" id="item-price"/>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Add To Cart
+        </button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <table class="table" id="cart-table">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Item Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="total-cost">Total Cost: $0</p>
+      <button class="btn btn-success" id="generate-invoice">Generate Invoice</button>
+    </div>
+  </div>
+
+  <style>
+        .b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.nav-link img {
+    filter: invert(100%);
+  }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
